@@ -346,6 +346,76 @@ button {
   margin: 0 auto;
 }
 
+/* ------------------------------------------------- nivel de contar (06) */
+
+.contar-host {
+  width: 100%;
+  margin: auto 0;
+  touch-action: none;
+}
+
+.contar {
+  display: block;
+  width: 100%;
+  height: auto;
+  font-family: var(--font);
+}
+
+.contar__tarjeta {
+  cursor: pointer;
+}
+
+.contar__tarjeta:focus-visible rect:nth-of-type(2) {
+  stroke: var(--ink);
+  stroke-width: 4;
+}
+
+.contar__tarjeta--fallo {
+  animation: contar-tiembla 400ms ease;
+}
+
+.contar__pista {
+  animation: contar-late 1.1s ease-in-out infinite;
+}
+
+@keyframes contar-tiembla {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-7px);
+  }
+  60% {
+    transform: translateX(6px);
+  }
+}
+
+@keyframes contar-late {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.35;
+  }
+}
+
+.nivel__ayuda {
+  margin: 0;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--ink-soft);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .contar__tarjeta--fallo,
+  .contar__pista {
+    animation: none;
+  }
+}
+
 /* --------------------------------------------------------- éxito 08 */
 
 .exito {

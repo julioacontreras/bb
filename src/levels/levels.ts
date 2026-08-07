@@ -1,5 +1,6 @@
 import { color } from '../ui/tokens'
 import { shapeLabel, type ShapeName } from '../game/shapes'
+import { nivelContar, numeroNombre } from './contar'
 import type { Hole, LevelDef, Piece } from './types'
 
 /** Color canónico de cada forma (§ 2 del plan). */
@@ -184,7 +185,7 @@ const nivel5: LevelDef = {
   })),
 }
 
-export const LEVELS: LevelDef[] = [nivel1, nivel2, nivel3, nivel4, nivel5]
+export const LEVELS: LevelDef[] = [nivel1, nivel2, nivel3, nivel4, nivel5, nivelContar]
 
 /** Cómo se nombra cada métrica en los reportes del adulto. */
 export const metricLabel: Record<string, string> = {
@@ -195,6 +196,9 @@ export const metricLabel: Record<string, string> = {
   'tamano-m': 'mediana',
   'tamano-s': 'pequeña',
   'tamano-xs': 'muy pequeña',
+  ...Object.fromEntries(
+    Object.entries(numeroNombre).map(([n, nombre]) => [`numero-${n}`, `número ${nombre}`]),
+  ),
 }
 
 /** Emoji para las métricas que no son formas geométricas. */
@@ -205,6 +209,7 @@ export const metricEmoji: Record<string, string> = {
   'tamano-m': '🍎',
   'tamano-s': '🍎',
   'tamano-xs': '🍎',
+  ...Object.fromEntries(Object.keys(numeroNombre).map((n) => [`numero-${n}`, '✋'])),
 }
 
 export const levelById = (id: string): LevelDef | undefined =>

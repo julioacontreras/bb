@@ -67,8 +67,10 @@ export class BoardScene extends Phaser.Scene {
 
     this.makeSparkTexture()
 
-    const mascot = drawMascot(this, this.level.mascot, BOARD_SIZE)
-    mascot.setDepth(0)
+    if (this.level.mascot) {
+      const mascot = drawMascot(this, this.level.mascot, BOARD_SIZE)
+      mascot.setDepth(0)
+    }
 
     for (const hole of this.level.holes) this.holes.push(this.createHole(hole))
 
@@ -149,7 +151,7 @@ export class BoardScene extends Phaser.Scene {
       this.drawVisual(sil, hole.visual, hole.size * 0.78, hex(color.ink))
       sil.setAlpha(0.09)
       c.add(sil)
-    } else {
+    } else if (hole.visual.kind === 'emoji') {
       const sil = this.add
         .text(0, 0, hole.visual.emoji, { fontSize: `${Math.round(hole.size * 0.62)}px` })
         .setOrigin(0.5)
@@ -170,7 +172,7 @@ export class BoardScene extends Phaser.Scene {
         color: hex(color.white),
       })
       c.add(g)
-    } else {
+    } else if (piece.visual.kind === 'emoji') {
       const s = piece.size + 10
       g.fillStyle(hex(color.white))
       g.fillRoundedRect(-s / 2, -s / 2, s, s, 16)

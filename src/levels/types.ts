@@ -6,6 +6,10 @@ export type MascotName = 'tortuga' | 'leon' | 'manzana' | 'cesta' | 'arbol'
 export type Visual =
   | { kind: 'shape'; shape: ShapeName }
   | { kind: 'emoji'; emoji: string }
+  /** Nivel de contar: la mano con `dedos` levantados. */
+  | { kind: 'mano'; dedos: number }
+  /** Nivel de contar: la cifra a la que hay que unirla. */
+  | { kind: 'numero'; n: number }
 
 export interface Hole {
   id: string
@@ -30,14 +34,15 @@ export interface Piece {
   metric: string
 }
 
-export type LevelMode = 'formas' | 'sombras' | 'tamanos'
+export type LevelMode = 'formas' | 'sombras' | 'tamanos' | 'contar'
 
 export interface LevelDef {
   id: string
   /** Número que se pinta en el badge de la tarjeta del mapa. */
   number: number
   title: string
-  mascot: MascotName
+  /** `null` en los niveles que no usan el tablero de Phaser. */
+  mascot: MascotName | null
   /** Emoji del avatar de la tarjeta de nivel. */
   emoji: string
   avatarColor: string

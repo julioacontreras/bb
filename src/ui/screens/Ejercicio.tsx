@@ -1,6 +1,7 @@
 import { useEffect, useMemo } from 'react'
 import { BotonGrande, Segmentado, Tarjeta } from '../components/base'
 import { Pieza } from '../components/Pieza'
+import { Mano } from '../components/Mano'
 import { chartColor, color } from '../tokens'
 import { setProgress, useProgress, type Difficulty } from '../../data/progress'
 import { useReport } from '../../data/useReport'
@@ -101,8 +102,12 @@ export function Ejercicio({ nav }: { nav: Nav }) {
                 >
                   {p.visual.kind === 'shape' ? (
                     <Pieza shape={p.visual.shape} size={44} />
-                  ) : (
+                  ) : p.visual.kind === 'emoji' ? (
                     <span style={{ fontSize: 34 }}>{p.visual.emoji}</span>
+                  ) : p.visual.kind === 'mano' ? (
+                    <Mano dedos={p.visual.dedos} width={56} />
+                  ) : (
+                    <span style={{ fontSize: 34, fontWeight: 800 }}>{p.visual.n}</span>
                   )}
                   <span style={{ fontSize: 13, fontWeight: 700, color: color.inkSoft }}>
                     {metricLabel[p.metric] ?? p.metric}

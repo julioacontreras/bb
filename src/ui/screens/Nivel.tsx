@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { PhaserBoard } from '../../game/PhaserBoard'
+import { ContarBoard } from '../../game/ContarBoard'
 import { on } from '../../game/bus'
 import { say } from '../../game/audio'
 import { log } from '../../data/events'
@@ -69,7 +70,14 @@ export function Nivel({ level, nav }: { level: LevelDef; nav: Nav }) {
         {level.prompt}
       </button>
 
-      <PhaserBoard level={level} />
+      {level.mode === 'contar' ? (
+        <>
+          <ContarBoard level={level} />
+          <p className="nivel__ayuda">{level.help}</p>
+        </>
+      ) : (
+        <PhaserBoard level={level} />
+      )}
     </div>
   )
 }

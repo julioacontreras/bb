@@ -9692,6 +9692,1333 @@
           ]
         }
       ]
+    },
+    {
+      "type": "frame",
+      "id": "NOqkn",
+      "x": 6472,
+      "y": 176,
+      "name": "14 Nivel 6 - Cuenta y Une",
+      "clip": true,
+      "width": 390,
+      "fill": {
+        "type": "gradient",
+        "gradientType": "linear",
+        "enabled": true,
+        "rotation": 180,
+        "size": {
+          "height": 1
+        },
+        "colors": [
+          {
+            "color": "#FFE7F0",
+            "position": 0
+          },
+          {
+            "color": "#F1ECFF",
+            "position": 0.55
+          },
+          {
+            "color": "#FFF7E8",
+            "position": 1
+          }
+        ]
+      },
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "VwgPE",
+          "name": "Status Bar",
+          "width": "fill_container",
+          "height": 62,
+          "padding": [
+            0,
+            26
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "ogPD9",
+              "name": "Hora",
+              "fill": "$ink",
+              "content": "9:41",
+              "fontFamily": "Inter",
+              "fontSize": 15,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "bvuYQ",
+              "name": "Iconos",
+              "gap": 6,
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "Gxlyk",
+                  "name": "signal",
+                  "width": 17,
+                  "height": 17,
+                  "icon": "signal",
+                  "library": "lucide",
+                  "fill": "$ink"
+                },
+                {
+                  "type": "icon",
+                  "id": "Vlw95",
+                  "name": "wifi",
+                  "width": 17,
+                  "height": 17,
+                  "icon": "wifi",
+                  "library": "lucide",
+                  "fill": "$ink"
+                },
+                {
+                  "type": "icon",
+                  "id": "tDbhM",
+                  "name": "battery-full",
+                  "width": 17,
+                  "height": 17,
+                  "icon": "battery-full",
+                  "library": "lucide",
+                  "fill": "$ink"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "k9CCtZ",
+          "name": "Contenido",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 18,
+          "padding": [
+            6,
+            20,
+            34,
+            20
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "PhR3e",
+              "name": "Barra Superior",
+              "width": "fill_container",
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "F7Pwcv",
+                  "name": "Volver",
+                  "width": 54,
+                  "height": 54,
+                  "fill": "$white",
+                  "cornerRadius": "$r-pill",
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000024",
+                    "offset": {
+                      "x": 0,
+                      "y": 4
+                    },
+                    "blur": 10
+                  },
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "y6xW8R",
+                      "name": "Icono",
+                      "width": 28,
+                      "height": 28,
+                      "icon": "arrow-left",
+                      "library": "lucide",
+                      "fill": "$ink-soft"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "eKUfI",
+                  "name": "Progreso",
+                  "width": "fill_container",
+                  "height": 54,
+                  "fill": "#FFFFFFB3",
+                  "cornerRadius": "$r-pill",
+                  "gap": 8,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "ellipse",
+                      "id": "LETIQ",
+                      "name": "Punto 1",
+                      "fill": "$green",
+                      "width": 14,
+                      "height": 14
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "gs6vU",
+                      "name": "Punto 2",
+                      "fill": "$green",
+                      "width": 14,
+                      "height": 14
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "p03X9",
+                      "name": "Punto 3",
+                      "fill": "$green",
+                      "width": 14,
+                      "height": 14
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "WLHbc",
+                      "name": "Punto 4",
+                      "fill": "$sun",
+                      "width": 18,
+                      "height": 18
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "YpChX",
+                      "name": "Punto 5",
+                      "fill": "#DCD3C6",
+                      "width": 14,
+                      "height": 14
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "b0gwCd",
+                  "name": "Sonido",
+                  "width": 54,
+                  "height": 54,
+                  "fill": "$white",
+                  "cornerRadius": "$r-pill",
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000024",
+                    "offset": {
+                      "x": 0,
+                      "y": 4
+                    },
+                    "blur": 10
+                  },
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "iyB9c",
+                      "name": "Icono",
+                      "width": 28,
+                      "height": 28,
+                      "icon": "volume-2",
+                      "library": "lucide",
+                      "fill": "$ink-soft"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Y649HK",
+              "name": "Instruccion",
+              "width": "fill_container",
+              "fill": "$white",
+              "cornerRadius": "$r-pill",
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#0000001A",
+                "offset": {
+                  "x": 0,
+                  "y": 4
+                },
+                "blur": 10
+              },
+              "gap": 10,
+              "padding": [
+                13,
+                18
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "I8Zb6X",
+                  "name": "Altavoz",
+                  "width": 26,
+                  "height": 26,
+                  "icon": "volume-2",
+                  "library": "lucide",
+                  "fill": "$pink"
+                },
+                {
+                  "type": "text",
+                  "id": "kqAFS",
+                  "name": "Texto",
+                  "fill": "$ink",
+                  "content": "¡Une cada mano con su número!",
+                  "fontFamily": "$font-round",
+                  "fontSize": 19,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "U0B4R",
+              "name": "Tablero",
+              "width": "fill_container",
+              "height": 510,
+              "fill": "#FFFFFF80",
+              "cornerRadius": 40,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "path",
+                  "id": "JddRD",
+                  "x": 0,
+                  "y": 0,
+                  "name": "Union 3",
+                  "geometry": "M142 55l64 200",
+                  "viewBox": [
+                    0,
+                    0,
+                    350,
+                    510
+                  ],
+                  "fill": "#00000000",
+                  "width": 350,
+                  "height": 510,
+                  "stroke": "$green",
+                  "strokeWidth": 7,
+                  "strokeLinecap": "round"
+                },
+                {
+                  "type": "path",
+                  "id": "U0kijs",
+                  "x": 0,
+                  "y": 0,
+                  "name": "Union 1",
+                  "geometry": "M142 355l64-300",
+                  "viewBox": [
+                    0,
+                    0,
+                    350,
+                    510
+                  ],
+                  "fill": "#00000000",
+                  "width": 350,
+                  "height": 510,
+                  "stroke": "$red",
+                  "strokeWidth": 7,
+                  "strokeLinecap": "round"
+                },
+                {
+                  "type": "path",
+                  "id": "b7M5K",
+                  "x": 0,
+                  "y": 0,
+                  "name": "Union 2",
+                  "geometry": "M142 455l64-300",
+                  "viewBox": [
+                    0,
+                    0,
+                    350,
+                    510
+                  ],
+                  "fill": "#00000000",
+                  "width": 350,
+                  "height": 510,
+                  "stroke": "$blue",
+                  "strokeWidth": 7,
+                  "strokeLinecap": "round"
+                },
+                {
+                  "type": "path",
+                  "id": "m9FDz",
+                  "x": 0,
+                  "y": 0,
+                  "name": "Union activa",
+                  "opacity": 0.6,
+                  "geometry": "M142 255l52 40",
+                  "viewBox": [
+                    0,
+                    0,
+                    350,
+                    510
+                  ],
+                  "fill": "#00000000",
+                  "width": 350,
+                  "height": 510,
+                  "stroke": "$sun",
+                  "strokeWidth": 7,
+                  "strokeLinecap": "round"
+                },
+                {
+                  "type": "frame",
+                  "id": "Xbh8N",
+                  "x": 10,
+                  "y": 12,
+                  "name": "Mano 3",
+                  "clip": true,
+                  "width": 110,
+                  "height": 86,
+                  "fill": "$white",
+                  "cornerRadius": 26,
+                  "stroke": "$white",
+                  "strokeWidth": 4,
+                  "strokeAlignment": "outer",
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000021",
+                    "offset": {
+                      "x": 0,
+                      "y": 5
+                    },
+                    "blur": 12
+                  },
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 6,
+                      "id": "eAGTx",
+                      "x": 36.5,
+                      "y": 12,
+                      "name": "Dedo 1",
+                      "fill": "#FFE0BE",
+                      "width": 11,
+                      "height": 34,
+                      "stroke": "#3A2A1C",
+                      "strokeWidth": 3.5,
+                      "strokeLinejoin": "round"
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 6,
+                      "id": "Pioys",
+                      "x": 49.5,
+                      "y": 8,
+                      "name": "Dedo 2",
+                      "fill": "#FFE0BE",
+                      "width": 11,
+                      "height": 38,
+                      "stroke": "#3A2A1C",
+                      "strokeWidth": 3.5,
+                      "strokeLinejoin": "round"
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 6,
+                      "id": "GdxNs",
+                      "x": 62.5,
+                      "y": 10,
+                      "name": "Dedo 3",
+                      "fill": "#FFE0BE",
+                      "width": 11,
+                      "height": 36,
+                      "stroke": "#3A2A1C",
+                      "strokeWidth": 3.5,
+                      "strokeLinejoin": "round"
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 7,
+                      "id": "TDeKW",
+                      "x": 40,
+                      "y": 72,
+                      "name": "Manga",
+                      "fill": "#FFC98F",
+                      "width": 34,
+                      "height": 18,
+                      "stroke": "#3A2A1C",
+                      "strokeWidth": 3.5
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 19,
+                      "id": "e3cyLE",
+                      "x": 23,
+                      "y": 40,
+                      "name": "Puno",
+                      "fill": "#FFE0BE",
+                      "width": 64,
+                      "height": 40,
+                      "stroke": "#3A2A1C",
+                      "strokeWidth": 3.5,
+                      "strokeLinejoin": "round"
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 8,
+                      "id": "XYUat",
+                      "x": 20,
+                      "y": 54,
+                      "name": "Pulgar",
+                      "rotation": -8,
+                      "fill": "#FFE0BE",
+                      "width": 33,
+                      "height": 16,
+                      "stroke": "#3A2A1C",
+                      "strokeWidth": 3.5
+                    },
+                    {
+                      "type": "path",
+                      "id": "luVdL",
+                      "x": 0,
+                      "y": 0,
+                      "name": "Pliegues",
+                      "geometry": "M64 48q6 8 0 16m12-14q5 7 0 13",
+                      "viewBox": [
+                        0,
+                        0,
+                        110,
+                        86
+                      ],
+                      "fill": "#00000000",
+                      "width": 110,
+                      "height": 86,
+                      "stroke": "#3A2A1C",
+                      "strokeWidth": 2.5,
+                      "strokeLinecap": "round"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "qdCTK",
+                  "x": 10,
+                  "y": 112,
+                  "name": "Mano 5",
+                  "clip": true,
+                  "width": 110,
+                  "height": 86,
+                  "fill": "$white",
+                  "cornerRadius": 26,
+                  "stroke": "$white",
+                  "strokeWidth": 4,
+                  "strokeAlignment": "outer",
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000021",
+                    "offset": {
+                      "x": 0,
+                      "y": 5
+                    },
+                    "blur": 12
+                  },
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 6,
+                      "id": "DHjIB",
+                      "x": 26.5,
+                      "y": 12,
+                      "name": "Dedo 1",
+                      "fill": "#FFE0BE",
+                      "width": 11,
+                      "height": 34,
+                      "stroke": "#3A2A1C",
+                      "strokeWidth": 3.5,
+                      "strokeLinejoin": "round"
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 6,
+                      "id": "UDxDB",
+                      "x": 39.5,
+                      "y": 8,
+                      "name": "Dedo 2",
+                      "fill": "#FFE0BE",
+                      "width": 11,
+                      "height": 38,
+                      "stroke": "#3A2A1C",
+                      "strokeWidth": 3.5,
+                      "strokeLinejoin": "round"
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 6,
+                      "id": "G363H8",
+                      "x": 52.5,
+                      "y": 10,
+                      "name": "Dedo 3",
+                      "fill": "#FFE0BE",
+                      "width": 11,
+                      "height": 36,
+                      "stroke": "#3A2A1C",
+                      "strokeWidth": 3.5,
+                      "strokeLinejoin": "round"
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 6,
+                      "id": "k6b93c",
+                      "x": 65.5,
+                      "y": 14,
+                      "name": "Dedo 4",
+                      "fill": "#FFE0BE",
+                      "width": 11,
+                      "height": 32,
+                      "stroke": "#3A2A1C",
+                      "strokeWidth": 3.5,
+                      "strokeLinejoin": "round"
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 7,
+                      "id": "pjixF",
+                      "x": 40,
+                      "y": 72,
+                      "name": "Manga",
+                      "fill": "#FFC98F",
+                      "width": 34,
+                      "height": 18,
+                      "stroke": "#3A2A1C",
+                      "strokeWidth": 3.5
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 19,
+                      "id": "u0DnE",
+                      "x": 23,
+                      "y": 40,
+                      "name": "Puno",
+                      "fill": "#FFE0BE",
+                      "width": 64,
+                      "height": 40,
+                      "stroke": "#3A2A1C",
+                      "strokeWidth": 3.5,
+                      "strokeLinejoin": "round"
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 8,
+                      "id": "o1xPS",
+                      "x": 26.92955346976032,
+                      "y": 72.32612621526152,
+                      "name": "Pulgar",
+                      "rotation": 136.48032767846013,
+                      "fill": "#FFE0BE",
+                      "width": 33,
+                      "height": 16,
+                      "stroke": "#3A2A1C",
+                      "strokeWidth": 3.5
+                    },
+                    {
+                      "type": "path",
+                      "id": "iU6rA",
+                      "x": 0,
+                      "y": 0,
+                      "name": "Pliegues",
+                      "geometry": "M64 48q6 8 0 16m12-14q5 7 0 13",
+                      "viewBox": [
+                        0,
+                        0,
+                        110,
+                        86
+                      ],
+                      "fill": "#00000000",
+                      "width": 110,
+                      "height": 86,
+                      "stroke": "#3A2A1C",
+                      "strokeWidth": 2.5,
+                      "strokeLinecap": "round"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "FOv1b",
+                  "x": 10,
+                  "y": 212,
+                  "name": "Mano 4",
+                  "clip": true,
+                  "width": 110,
+                  "height": 86,
+                  "fill": "$white",
+                  "cornerRadius": 26,
+                  "stroke": "$white",
+                  "strokeWidth": 4,
+                  "strokeAlignment": "outer",
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000021",
+                    "offset": {
+                      "x": 0,
+                      "y": 5
+                    },
+                    "blur": 12
+                  },
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 6,
+                      "id": "rbJxf",
+                      "x": 30,
+                      "y": 12,
+                      "name": "Dedo 1",
+                      "fill": "#FFE0BE",
+                      "width": 11,
+                      "height": 34,
+                      "stroke": "#3A2A1C",
+                      "strokeWidth": 3.5,
+                      "strokeLinejoin": "round"
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 6,
+                      "id": "Zfxlp",
+                      "x": 43,
+                      "y": 8,
+                      "name": "Dedo 2",
+                      "fill": "#FFE0BE",
+                      "width": 11,
+                      "height": 38,
+                      "stroke": "#3A2A1C",
+                      "strokeWidth": 3.5,
+                      "strokeLinejoin": "round"
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 6,
+                      "id": "igFi5",
+                      "x": 56,
+                      "y": 10,
+                      "name": "Dedo 3",
+                      "fill": "#FFE0BE",
+                      "width": 11,
+                      "height": 36,
+                      "stroke": "#3A2A1C",
+                      "strokeWidth": 3.5,
+                      "strokeLinejoin": "round"
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 6,
+                      "id": "cJwRa",
+                      "x": 69,
+                      "y": 14,
+                      "name": "Dedo 4",
+                      "fill": "#FFE0BE",
+                      "width": 11,
+                      "height": 32,
+                      "stroke": "#3A2A1C",
+                      "strokeWidth": 3.5,
+                      "strokeLinejoin": "round"
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 7,
+                      "id": "Yynfw",
+                      "x": 40,
+                      "y": 72,
+                      "name": "Manga",
+                      "fill": "#FFC98F",
+                      "width": 34,
+                      "height": 18,
+                      "stroke": "#3A2A1C",
+                      "strokeWidth": 3.5
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 19,
+                      "id": "Xvh8Z",
+                      "x": 23,
+                      "y": 40,
+                      "name": "Puno",
+                      "fill": "#FFE0BE",
+                      "width": 64,
+                      "height": 40,
+                      "stroke": "#3A2A1C",
+                      "strokeWidth": 3.5,
+                      "strokeLinejoin": "round"
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 8,
+                      "id": "e8ubP",
+                      "x": 20,
+                      "y": 54,
+                      "name": "Pulgar",
+                      "rotation": -8,
+                      "fill": "#FFE0BE",
+                      "width": 33,
+                      "height": 16,
+                      "stroke": "#3A2A1C",
+                      "strokeWidth": 3.5
+                    },
+                    {
+                      "type": "path",
+                      "id": "XiB72",
+                      "x": 0,
+                      "y": 0,
+                      "name": "Pliegues",
+                      "geometry": "M64 48q6 8 0 16m12-14q5 7 0 13",
+                      "viewBox": [
+                        0,
+                        0,
+                        110,
+                        86
+                      ],
+                      "fill": "#00000000",
+                      "width": 110,
+                      "height": 86,
+                      "stroke": "#3A2A1C",
+                      "strokeWidth": 2.5,
+                      "strokeLinecap": "round"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "q057yh",
+                  "x": 10,
+                  "y": 312,
+                  "name": "Mano 1",
+                  "clip": true,
+                  "width": 110,
+                  "height": 86,
+                  "fill": "$white",
+                  "cornerRadius": 26,
+                  "stroke": "$white",
+                  "strokeWidth": 4,
+                  "strokeAlignment": "outer",
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000021",
+                    "offset": {
+                      "x": 0,
+                      "y": 5
+                    },
+                    "blur": 12
+                  },
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 6,
+                      "id": "kCu9M",
+                      "x": 33,
+                      "y": 12,
+                      "name": "Dedo 1",
+                      "fill": "#FFE0BE",
+                      "width": 11,
+                      "height": 34,
+                      "stroke": "#3A2A1C",
+                      "strokeWidth": 3.5,
+                      "strokeLinejoin": "round"
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 7,
+                      "id": "nU35O",
+                      "x": 40,
+                      "y": 72,
+                      "name": "Manga",
+                      "fill": "#FFC98F",
+                      "width": 34,
+                      "height": 18,
+                      "stroke": "#3A2A1C",
+                      "strokeWidth": 3.5
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 19,
+                      "id": "gWMqR",
+                      "x": 23,
+                      "y": 40,
+                      "name": "Puno",
+                      "fill": "#FFE0BE",
+                      "width": 64,
+                      "height": 40,
+                      "stroke": "#3A2A1C",
+                      "strokeWidth": 3.5,
+                      "strokeLinejoin": "round"
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 8,
+                      "id": "TApdJ",
+                      "x": 20,
+                      "y": 54,
+                      "name": "Pulgar",
+                      "rotation": -8,
+                      "fill": "#FFE0BE",
+                      "width": 33,
+                      "height": 16,
+                      "stroke": "#3A2A1C",
+                      "strokeWidth": 3.5
+                    },
+                    {
+                      "type": "path",
+                      "id": "GIIOv",
+                      "x": 0,
+                      "y": 0,
+                      "name": "Pliegues",
+                      "geometry": "M64 48q6 8 0 16m12-14q5 7 0 13",
+                      "viewBox": [
+                        0,
+                        0,
+                        110,
+                        86
+                      ],
+                      "fill": "#00000000",
+                      "width": 110,
+                      "height": 86,
+                      "stroke": "#3A2A1C",
+                      "strokeWidth": 2.5,
+                      "strokeLinecap": "round"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "mcXYI",
+                  "x": 10,
+                  "y": 412,
+                  "name": "Mano 2",
+                  "clip": true,
+                  "width": 110,
+                  "height": 86,
+                  "fill": "$white",
+                  "cornerRadius": 26,
+                  "stroke": "$white",
+                  "strokeWidth": 4,
+                  "strokeAlignment": "outer",
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000021",
+                    "offset": {
+                      "x": 0,
+                      "y": 5
+                    },
+                    "blur": 12
+                  },
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 6,
+                      "id": "Rvb4i",
+                      "x": 43,
+                      "y": 12,
+                      "name": "Dedo 1",
+                      "fill": "#FFE0BE",
+                      "width": 11,
+                      "height": 34,
+                      "stroke": "#3A2A1C",
+                      "strokeWidth": 3.5,
+                      "strokeLinejoin": "round"
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 6,
+                      "id": "m3rn4",
+                      "x": 56,
+                      "y": 8,
+                      "name": "Dedo 2",
+                      "fill": "#FFE0BE",
+                      "width": 11,
+                      "height": 38,
+                      "stroke": "#3A2A1C",
+                      "strokeWidth": 3.5,
+                      "strokeLinejoin": "round"
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 7,
+                      "id": "CyojV",
+                      "x": 40,
+                      "y": 72,
+                      "name": "Manga",
+                      "fill": "#FFC98F",
+                      "width": 34,
+                      "height": 18,
+                      "stroke": "#3A2A1C",
+                      "strokeWidth": 3.5
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 19,
+                      "id": "fbdAZ",
+                      "x": 23,
+                      "y": 40,
+                      "name": "Puno",
+                      "fill": "#FFE0BE",
+                      "width": 64,
+                      "height": 40,
+                      "stroke": "#3A2A1C",
+                      "strokeWidth": 3.5,
+                      "strokeLinejoin": "round"
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 8,
+                      "id": "InqWb",
+                      "x": 20,
+                      "y": 54,
+                      "name": "Pulgar",
+                      "rotation": -8,
+                      "fill": "#FFE0BE",
+                      "width": 33,
+                      "height": 16,
+                      "stroke": "#3A2A1C",
+                      "strokeWidth": 3.5
+                    },
+                    {
+                      "type": "path",
+                      "id": "DctWZ",
+                      "x": 0,
+                      "y": 0,
+                      "name": "Pliegues",
+                      "geometry": "M64 48q6 8 0 16m12-14q5 7 0 13",
+                      "viewBox": [
+                        0,
+                        0,
+                        110,
+                        86
+                      ],
+                      "fill": "#00000000",
+                      "width": 110,
+                      "height": 86,
+                      "stroke": "#3A2A1C",
+                      "strokeWidth": 2.5,
+                      "strokeLinecap": "round"
+                    }
+                  ]
+                },
+                {
+                  "type": "ellipse",
+                  "id": "Lbgv5",
+                  "x": 136,
+                  "y": 48,
+                  "name": "Punto mano 3",
+                  "fill": "$green",
+                  "width": 14,
+                  "height": 14
+                },
+                {
+                  "type": "ellipse",
+                  "id": "dTo7X",
+                  "x": 136,
+                  "y": 148,
+                  "name": "Punto mano 5",
+                  "fill": "#DCD3C6",
+                  "width": 14,
+                  "height": 14
+                },
+                {
+                  "type": "ellipse",
+                  "id": "d3kN5I",
+                  "x": 136,
+                  "y": 248,
+                  "name": "Punto mano 4",
+                  "fill": "$sun",
+                  "width": 14,
+                  "height": 14
+                },
+                {
+                  "type": "ellipse",
+                  "id": "w55Zn",
+                  "x": 136,
+                  "y": 348,
+                  "name": "Punto mano 1",
+                  "fill": "$red",
+                  "width": 14,
+                  "height": 14
+                },
+                {
+                  "type": "ellipse",
+                  "id": "hloBT",
+                  "x": 136,
+                  "y": 448,
+                  "name": "Punto mano 2",
+                  "fill": "$blue",
+                  "width": 14,
+                  "height": 14
+                },
+                {
+                  "type": "ellipse",
+                  "id": "ywaED",
+                  "x": 200,
+                  "y": 48,
+                  "name": "Punto num 1",
+                  "fill": "$red",
+                  "width": 14,
+                  "height": 14
+                },
+                {
+                  "type": "frame",
+                  "id": "j5qF9A",
+                  "x": 230,
+                  "y": 12,
+                  "name": "Numero 1",
+                  "width": 110,
+                  "height": 86,
+                  "fill": "$white",
+                  "cornerRadius": 26,
+                  "stroke": "$white",
+                  "strokeWidth": 4,
+                  "strokeAlignment": "outer",
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000021",
+                    "offset": {
+                      "x": 0,
+                      "y": 5
+                    },
+                    "blur": 12
+                  },
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "NqeD0",
+                      "name": "Cifra",
+                      "fill": "$red",
+                      "content": "1",
+                      "fontFamily": "$font-round",
+                      "fontSize": 50,
+                      "fontWeight": "800"
+                    }
+                  ]
+                },
+                {
+                  "type": "ellipse",
+                  "id": "ADEHJ",
+                  "x": 200,
+                  "y": 148,
+                  "name": "Punto num 2",
+                  "fill": "$blue",
+                  "width": 14,
+                  "height": 14
+                },
+                {
+                  "type": "frame",
+                  "id": "xRrrI",
+                  "x": 230,
+                  "y": 112,
+                  "name": "Numero 2",
+                  "width": 110,
+                  "height": 86,
+                  "fill": "$white",
+                  "cornerRadius": 26,
+                  "stroke": "$white",
+                  "strokeWidth": 4,
+                  "strokeAlignment": "outer",
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000021",
+                    "offset": {
+                      "x": 0,
+                      "y": 5
+                    },
+                    "blur": 12
+                  },
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "bYhur",
+                      "name": "Cifra",
+                      "fill": "$blue",
+                      "content": "2",
+                      "fontFamily": "$font-round",
+                      "fontSize": 50,
+                      "fontWeight": "800"
+                    }
+                  ]
+                },
+                {
+                  "type": "ellipse",
+                  "id": "stsWa",
+                  "x": 200,
+                  "y": 248,
+                  "name": "Punto num 3",
+                  "fill": "$green",
+                  "width": 14,
+                  "height": 14
+                },
+                {
+                  "type": "frame",
+                  "id": "O82BeP",
+                  "x": 230,
+                  "y": 212,
+                  "name": "Numero 3",
+                  "width": 110,
+                  "height": 86,
+                  "fill": "$white",
+                  "cornerRadius": 26,
+                  "stroke": "$white",
+                  "strokeWidth": 4,
+                  "strokeAlignment": "outer",
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000021",
+                    "offset": {
+                      "x": 0,
+                      "y": 5
+                    },
+                    "blur": 12
+                  },
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "yYyqz",
+                      "name": "Cifra",
+                      "fill": "$green",
+                      "content": "3",
+                      "fontFamily": "$font-round",
+                      "fontSize": 50,
+                      "fontWeight": "800"
+                    }
+                  ]
+                },
+                {
+                  "type": "ellipse",
+                  "id": "i6XMj",
+                  "x": 200,
+                  "y": 348,
+                  "name": "Punto num 4",
+                  "fill": "#DCD3C6",
+                  "width": 14,
+                  "height": 14
+                },
+                {
+                  "type": "frame",
+                  "id": "fJrW1",
+                  "x": 230,
+                  "y": 312,
+                  "name": "Numero 4",
+                  "width": 110,
+                  "height": 86,
+                  "fill": "$white",
+                  "cornerRadius": 26,
+                  "stroke": "$white",
+                  "strokeWidth": 4,
+                  "strokeAlignment": "outer",
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000021",
+                    "offset": {
+                      "x": 0,
+                      "y": 5
+                    },
+                    "blur": 12
+                  },
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "stHIW",
+                      "name": "Cifra",
+                      "fill": "$pink",
+                      "content": "4",
+                      "fontFamily": "$font-round",
+                      "fontSize": 50,
+                      "fontWeight": "800"
+                    }
+                  ]
+                },
+                {
+                  "type": "ellipse",
+                  "id": "j4RQIZ",
+                  "x": 200,
+                  "y": 448,
+                  "name": "Punto num 5",
+                  "fill": "#DCD3C6",
+                  "width": 14,
+                  "height": 14
+                },
+                {
+                  "type": "frame",
+                  "id": "nTc4u",
+                  "x": 230,
+                  "y": 412,
+                  "name": "Numero 5",
+                  "width": 110,
+                  "height": 86,
+                  "fill": "$white",
+                  "cornerRadius": 26,
+                  "stroke": "$white",
+                  "strokeWidth": 4,
+                  "strokeAlignment": "outer",
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000021",
+                    "offset": {
+                      "x": 0,
+                      "y": 5
+                    },
+                    "blur": 12
+                  },
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "T13Gde",
+                      "name": "Cifra",
+                      "fill": "$purple",
+                      "content": "5",
+                      "fontFamily": "$font-round",
+                      "fontSize": 50,
+                      "fontWeight": "800"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "VSMRK",
+              "name": "Ayuda",
+              "fill": "$ink-soft",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Cuenta los dedos y arrastra hasta el número",
+              "textAlign": "center",
+              "fontFamily": "$font-round",
+              "fontSize": 17,
+              "fontWeight": "500"
+            }
+          ]
+        }
+      ]
     }
   ],
   "variables": {
