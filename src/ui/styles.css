@@ -416,6 +416,46 @@ button {
   }
 }
 
+/* ------------------------------------------------- nivel de puzzle (07) */
+
+.puzzle-host {
+  width: 100%;
+  margin: auto 0;
+  touch-action: none;
+}
+
+.puzzle {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.puzzle__pieza,
+.puzzle__hueco {
+  cursor: pointer;
+}
+
+.puzzle__pieza:focus-visible rect:nth-of-type(2),
+.puzzle__hueco:focus-visible rect:nth-of-type(1) {
+  stroke: var(--ink);
+  stroke-width: 4;
+}
+
+.puzzle__hueco--fallo {
+  animation: contar-tiembla 400ms ease;
+}
+
+.puzzle__pista {
+  animation: contar-late 1.1s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .puzzle__hueco--fallo,
+  .puzzle__pista {
+    animation: none;
+  }
+}
+
 /* --------------------------------------------------------- éxito 08 */
 
 .exito {

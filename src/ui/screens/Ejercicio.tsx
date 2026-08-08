@@ -106,8 +106,10 @@ export function Ejercicio({ nav }: { nav: Nav }) {
                     <span style={{ fontSize: 34 }}>{p.visual.emoji}</span>
                   ) : p.visual.kind === 'mano' ? (
                     <Mano dedos={p.visual.dedos} width={56} />
-                  ) : (
+                  ) : p.visual.kind === 'numero' ? (
                     <span style={{ fontSize: 34, fontWeight: 800 }}>{p.visual.n}</span>
+                  ) : (
+                    <span style={{ fontSize: 34 }}>🧩</span>
                   )}
                   <span style={{ fontSize: 13, fontWeight: 700, color: color.inkSoft }}>
                     {metricLabel[p.metric] ?? p.metric}

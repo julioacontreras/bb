@@ -10,6 +10,8 @@ export type Visual =
   | { kind: 'mano'; dedos: number }
   /** Nivel de contar: la cifra a la que hay que unirla. */
   | { kind: 'numero'; n: number }
+  /** Nivel de puzzle: el cuadrante (fila, columna) del dibujo. */
+  | { kind: 'trozo'; fila: number; col: number }
 
 export interface Hole {
   id: string
@@ -34,7 +36,7 @@ export interface Piece {
   metric: string
 }
 
-export type LevelMode = 'formas' | 'sombras' | 'tamanos' | 'contar'
+export type LevelMode = 'formas' | 'sombras' | 'tamanos' | 'contar' | 'puzzle'
 
 export interface LevelDef {
   id: string
