@@ -24,7 +24,8 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
-      - run: npm run build
+      # En Pages el sitio vive en un subdirectorio; en Netlify y en local, en la raíz.
+      - run: npm run build -- --base=/bb/
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
