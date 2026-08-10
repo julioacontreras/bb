@@ -18,7 +18,7 @@ animación. Todo con botones grandes, colores brillantes y cero texto que haya q
 - Arrastrar y soltar para mover las formas por la pantalla
 - Guardar la evolución del bebé y generar **reportes de progreso**
 - La dificultad se adapta según el progreso: más ejercicios o niveles más difíciles
-
+- Codigo y comentario, nombre de archivos todo siempre en ingles
 ---
 
 ## 1. Principios de diseño
