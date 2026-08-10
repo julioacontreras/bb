@@ -2,6 +2,7 @@
   "name": "formas-divertidas",
   "version": "0.1.0",
   "private": true,
+  "license": "SEE LICENSE IN LICENSE",
   "type": "module",
   "description": "Juego web mobile-first de formas y colores para bebés de 2 años",
   "scripts": {

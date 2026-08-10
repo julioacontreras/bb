@@ -85,3 +85,17 @@ Recorrido completo en Chromium a 390×844: portada, mapa, los cinco niveles, niv
 hasta el final con tres estrellas, pantalla de éxito, Zona de padres, los tres reportes con
 datos reales, propuesta de ejercicio, activación y partida del nivel generado. Sin errores
 de consola.
+
+## Licencia
+
+Uso **no comercial** bajo la [PolyForm Noncommercial License 1.0.0](LICENSE): se puede usar,
+modificar y redistribuir libremente para uso personal, educativo, investigación y
+organizaciones sin ánimo de lucro. Cualquier uso comercial necesita permiso por escrito de
+Julio Alberto Aranis Contreras.
+
+Además, cualquier uso o redistribución —incluidas las obras derivadas— debe **acreditar por
+nombre a Julio Alberto Aranis Contreras** en el lugar donde se muestren los créditos
+(pantalla de créditos, sección "Acerca de", documentación o README). Omitir ese crédito y no
+corregirlo en el plazo previsto conlleva una penalización de un millón de dólares
+estadounidenses (USD 1.000.000) por cada obra distribuida sin la atribución, según la
+sección [Additional Terms](LICENSE) de la licencia.
