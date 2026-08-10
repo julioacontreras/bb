@@ -3,20 +3,39 @@ import { emit } from './bus'
 import { say, sfxApplause, sfxMatch, sfxMiss, sfxPick, sfxWin, unlockAudio } from './audio'
 import { CONTAR, numeroColor, rowCenterY, rowY } from '../levels/contar'
 import { ManoDibujo } from '../ui/components/Mano'
+import { FruitGroupDrawing, fruitName, fruitPlural } from '../ui/components/Fruits'
 import { color } from '../ui/tokens'
 import type { Hole, LevelDef, Piece } from '../levels/types'
 
 /**
- * Tablero del nivel de contar. Es SVG puro (no Phaser): así las tarjetas y las
- * líneas de unión comparten sistema de coordenadas y encajan al píxel a
- * cualquier ancho. Emite los mismos eventos de bus que `BoardScene`, de modo
- * que la pantalla de nivel, los reportes y las estrellas funcionan igual.
+ * Tablero de los niveles de contar y unir: el 06 con manos y el 08 con grupos
+ * de frutas. Es SVG puro (no Phaser): así las tarjetas y las líneas de unión
+ * comparten sistema de coordenadas y encajan al píxel a cualquier ancho. Emite
+ * los mismos eventos de bus que `BoardScene`, de modo que la pantalla de nivel,
+ * los reportes y las estrellas funcionan igual.
  */
 
 const SOMBRA = 'rgba(74, 55, 40, 0.10)'
 
 const dedosDe = (p: Piece): number => (p.visual.kind === 'mano' ? p.visual.dedos : 0)
 const cifraDe = (h: Hole): number => (h.visual.kind === 'numero' ? h.visual.n : 0)
+
+/** El dibujo de la tarjeta izquierda: una mano o un grupo de frutas. */
+const dibujoDe = (p: Piece) =>
+  p.visual.kind === 'fruits' ? (
+    <FruitGroupDrawing fruit={p.visual.fruit} count={p.visual.count} />
+  ) : (
+    <ManoDibujo dedos={dedosDe(p)} />
+  )
+
+const etiquetaDe = (p: Piece): string => {
+  if (p.visual.kind === 'fruits') {
+    const { fruit, count } = p.visual
+    return `${count} ${count === 1 ? fruitName[fruit] : fruitPlural[fruit]}`
+  }
+  const dedos = dedosDe(p)
+  return `Mano con ${dedos} ${dedos === 1 ? 'dedo' : 'dedos'}`
+}
 
 export function ContarBoard({ level }: { level: LevelDef }) {
   const manos = level.pieces
@@ -204,7 +223,7 @@ export function ContarBoard({ level }: { level: LevelDef }) {
               onPointerDown={(e) => tomar(mano, e)}
               role="button"
               tabIndex={0}
-              aria-label={`Mano con ${dedosDe(mano)} ${dedosDe(mano) === 1 ? 'dedo' : 'dedos'}${unida ? ', ya unida' : ''}`}
+              aria-label={`${etiquetaDe(mano)}${unida ? ', ya unida' : ''}`}
               aria-pressed={activa}
               onKeyDown={(e) => {
                 if (e.key === 'Enter' || e.key === ' ') {
@@ -230,7 +249,7 @@ export function ContarBoard({ level }: { level: LevelDef }) {
                 opacity={unida ? 0.75 : 1}
               />
               <g clipPath="url(#contar-tarjeta)" opacity={unida ? 0.6 : 1}>
-                <ManoDibujo dedos={dedosDe(mano)} />
+                {dibujoDe(mano)}
               </g>
             </g>
           )

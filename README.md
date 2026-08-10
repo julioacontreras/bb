@@ -28,7 +28,7 @@ src/
 │  ├─ audio.ts     Efectos sintetizados (WebAudio) y voz en español
 │  └─ bus.ts       Bus mínimo React ↔ Phaser
 ├─ data/           IndexedDB, eventos, progreso, reportes y dificultad adaptativa
-└─ levels/         Definición declarativa de los siete niveles
+└─ levels/         Definición declarativa de los ocho niveles
 ```
 
 Añadir un nivel es escribir un objeto en [src/levels/levels.ts](src/levels/levels.ts):
@@ -38,11 +38,16 @@ Las tres mecánicas del tablero de Phaser (forma geométrica, objeto→sombra y 
 tamaño) usan el mismo motor: cada pieza y cada hueco llevan una `key` y encajan cuando
 coinciden.
 
-Los dos niveles con tablero propio en SVG —*Cuenta y une* y el *Puzzle* del leoncito— siguen
-esa misma regla de `key` y emiten los mismos eventos de bus, así que estrellas, pistas y
-reportes funcionan sin tocar nada. En el puzzle las cuatro piezas son recortes del mismo
-dibujo ([src/ui/components/Leon.tsx](src/ui/components/Leon.tsx)): cambiar el león por otro
-animal es cambiar ese archivo.
+Los niveles con tablero propio en SVG —*Cuenta y une*, *Cuenta frutas* y el *Puzzle* del
+leoncito— siguen esa misma regla de `key` y emiten los mismos eventos de bus, así que
+estrellas, pistas y reportes funcionan sin tocar nada. En el puzzle las cuatro piezas son
+recortes del mismo dibujo ([src/ui/components/Leon.tsx](src/ui/components/Leon.tsx)): cambiar
+el león por otro animal es cambiar ese archivo.
+
+*Cuenta y une* (06) y *Cuenta frutas* (08) comparten tablero (`ContarBoard`) y geometría
+(`CONTAR`): sólo cambia el dibujo de la tarjeta izquierda, la mano
+([Mano.tsx](src/ui/components/Mano.tsx)) o el grupo de frutas
+([Fruits.tsx](src/ui/components/Fruits.tsx)).
 
 ## Lo que registra y cómo se adapta
 

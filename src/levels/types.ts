@@ -1,4 +1,5 @@
 import type { ShapeName } from '../game/shapes'
+import type { FruitName } from '../ui/components/Fruits'
 
 export type MascotName = 'tortuga' | 'leon' | 'manzana' | 'cesta' | 'arbol'
 
@@ -8,6 +9,8 @@ export type Visual =
   | { kind: 'emoji'; emoji: string }
   /** Nivel de contar: la mano con `dedos` levantados. */
   | { kind: 'mano'; dedos: number }
+  /** Nivel de contar frutas: `count` frutas iguales para contar. */
+  | { kind: 'fruits'; fruit: FruitName; count: number }
   /** Nivel de contar: la cifra a la que hay que unirla. */
   | { kind: 'numero'; n: number }
   /** Nivel de puzzle: el cuadrante (fila, columna) del dibujo. */
