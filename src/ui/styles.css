@@ -416,6 +416,102 @@ button {
   }
 }
 
+/* ------------------------------------------------ nivel de memoria (09) */
+
+.memoria-host {
+  width: 100%;
+  margin: auto 0;
+}
+
+.memoria {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  max-width: 330px;
+  margin: 0 auto;
+}
+
+.memoria__carta {
+  aspect-ratio: 1;
+  padding: 0;
+  background: none;
+  border: none;
+  perspective: 600px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.memoria__carta--fallo {
+  animation: contar-tiembla 400ms ease;
+}
+
+.memoria__giro {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 350ms ease;
+}
+
+.memoria__giro--arriba {
+  transform: rotateY(180deg);
+}
+
+.memoria__cara {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 26px;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.memoria__cara--dorso {
+  background: linear-gradient(180deg, #c9adf5 0%, #a57fe8 100%);
+  border: 5px solid var(--white);
+  color: var(--white);
+  font-size: 52px;
+  font-weight: 800;
+}
+
+.memoria__cara--frente {
+  background: var(--white);
+  border: 5px solid;
+  font-size: 56px;
+  transform: rotateY(180deg);
+}
+
+.memoria__check {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--green);
+  border: 3px solid var(--white);
+  color: var(--white);
+  font-size: 17px;
+  font-weight: 800;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .memoria__giro {
+    transition: none;
+  }
+
+  .memoria__carta--fallo {
+    animation: none;
+  }
+}
+
 /* ------------------------------------------------- nivel de puzzle (07) */
 
 .puzzle-host {

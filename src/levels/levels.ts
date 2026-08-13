@@ -4,6 +4,7 @@ import { shapeLabel, type ShapeName } from '../game/shapes'
 import { nivelContar, numeroNombre } from './contar'
 import { fruitByCount, levelFruitCount } from './fruitCount'
 import { nivelPuzzle, trozoNombre } from './puzzle'
+import { MEM_PAIRS, nivelMemoria } from './memoria'
 import type { Hole, LevelDef, Piece } from './types'
 
 /** Color canónico de cada forma (§ 2 del plan). */
@@ -197,6 +198,7 @@ export const LEVELS: LevelDef[] = [
   nivelContar,
   nivelPuzzle,
   levelFruitCount,
+  nivelMemoria,
 ]
 
 /** Cómo se nombra cada métrica en los reportes del adulto. */
@@ -217,6 +219,7 @@ export const metricLabel: Record<string, string> = {
   ...Object.fromEntries(
     Object.entries(numeroNombre).map(([n, nombre]) => [`frutas-${n}`, `contar ${nombre} frutas`]),
   ),
+  ...Object.fromEntries(MEM_PAIRS.map((p) => [`memoria-${p.key}`, `pareja: ${p.nombre}`])),
 }
 
 /** Emoji para las métricas que no son formas geométricas. */
@@ -232,6 +235,7 @@ export const metricEmoji: Record<string, string> = {
   ...Object.fromEntries(
     Object.entries(fruitByCount).map(([n, fruit]) => [`frutas-${n}`, fruitEmoji[fruit]]),
   ),
+  ...Object.fromEntries(MEM_PAIRS.map((p) => [`memoria-${p.key}`, p.emoji])),
 }
 
 export const levelById = (id: string): LevelDef | undefined =>
