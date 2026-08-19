@@ -39,7 +39,14 @@ export interface Piece {
   metric: string
 }
 
-export type LevelMode = 'formas' | 'sombras' | 'tamanos' | 'contar' | 'puzzle' | 'memoria'
+export type LevelMode =
+  | 'formas'
+  | 'sombras'
+  | 'tamanos'
+  | 'contar'
+  | 'puzzle'
+  | 'memoria'
+  | 'topos'
 
 export interface LevelDef {
   id: string

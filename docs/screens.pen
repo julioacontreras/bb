@@ -14355,6 +14355,619 @@
           ]
         }
       ]
+    },
+    {
+      "type": "frame",
+      "id": "p7wui",
+      "x": 8632,
+      "y": 176,
+      "name": "18 Nivel 10 - Atrapa al Raton",
+      "clip": true,
+      "width": 390,
+      "fill": {
+        "type": "gradient",
+        "gradientType": "linear",
+        "enabled": true,
+        "rotation": 180,
+        "size": {
+          "height": 1
+        },
+        "colors": [
+          {
+            "color": "#DFF5C8",
+            "position": 0
+          },
+          {
+            "color": "#FFF9DC",
+            "position": 0.55
+          },
+          {
+            "color": "#FFEFD6",
+            "position": 1
+          }
+        ]
+      },
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "nb7gz",
+          "name": "Status Bar",
+          "width": "fill_container",
+          "height": 62,
+          "padding": [
+            0,
+            26
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "EMG0k",
+              "name": "Hora",
+              "fill": "$ink",
+              "content": "9:41",
+              "fontFamily": "Inter",
+              "fontSize": 15,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "DDU8N",
+              "name": "Iconos",
+              "gap": 6,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "RWiAX",
+                  "name": "signal",
+                  "width": 17,
+                  "height": 17,
+                  "icon": "signal",
+                  "library": "lucide",
+                  "fill": "$ink"
+                },
+                {
+                  "type": "icon",
+                  "id": "L4ufo",
+                  "name": "wifi",
+                  "width": 17,
+                  "height": 17,
+                  "icon": "wifi",
+                  "library": "lucide",
+                  "fill": "$ink"
+                },
+                {
+                  "type": "icon",
+                  "id": "fQbc3",
+                  "name": "battery-full",
+                  "width": 17,
+                  "height": 17,
+                  "icon": "battery-full",
+                  "library": "lucide",
+                  "fill": "$ink"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "VUuKX",
+          "name": "Contenido",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 18,
+          "padding": [
+            6,
+            20,
+            34,
+            20
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "gaBCf",
+              "name": "Barra Superior",
+              "width": "fill_container",
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "aVils",
+                  "name": "Volver",
+                  "width": 54,
+                  "height": 54,
+                  "fill": "$white",
+                  "cornerRadius": "$r-pill",
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000024",
+                    "offset": {
+                      "x": 0,
+                      "y": 4
+                    },
+                    "blur": 10
+                  },
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "NExxZ",
+                      "name": "Icono",
+                      "width": 28,
+                      "height": 28,
+                      "icon": "arrow-left",
+                      "library": "lucide",
+                      "fill": "$ink-soft"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "c5LEB",
+                  "name": "Progreso",
+                  "width": "fill_container",
+                  "height": 54,
+                  "fill": "#FFFFFFB3",
+                  "cornerRadius": "$r-pill",
+                  "gap": 8,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "ellipse",
+                      "id": "D0njP",
+                      "name": "Punto 1",
+                      "fill": "$green",
+                      "width": 14,
+                      "height": 14
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "XPZjB",
+                      "name": "Punto 2",
+                      "fill": "$sun",
+                      "width": 18,
+                      "height": 18
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "qQLWC",
+                      "name": "Punto 3",
+                      "fill": "#DCD3C6",
+                      "width": 14,
+                      "height": 14
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "qm8wu",
+                      "name": "Punto 4",
+                      "fill": "#DCD3C6",
+                      "width": 14,
+                      "height": 14
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "S4cBUo",
+                      "name": "Punto 5",
+                      "fill": "#DCD3C6",
+                      "width": 14,
+                      "height": 14
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "nGDiv",
+                  "name": "Sonido",
+                  "width": 54,
+                  "height": 54,
+                  "fill": "$white",
+                  "cornerRadius": "$r-pill",
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000024",
+                    "offset": {
+                      "x": 0,
+                      "y": 4
+                    },
+                    "blur": 10
+                  },
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "KJ6rW",
+                      "name": "Icono",
+                      "width": 28,
+                      "height": 28,
+                      "icon": "volume-2",
+                      "library": "lucide",
+                      "fill": "$ink-soft"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "X8SPQh",
+              "name": "Instruccion",
+              "width": "fill_container",
+              "fill": "$white",
+              "cornerRadius": "$r-pill",
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#0000001A",
+                "offset": {
+                  "x": 0,
+                  "y": 4
+                },
+                "blur": 10
+              },
+              "gap": 10,
+              "padding": [
+                13,
+                18
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "WoA4B",
+                  "name": "Altavoz",
+                  "width": 26,
+                  "height": 26,
+                  "icon": "volume-2",
+                  "library": "lucide",
+                  "fill": "$pink"
+                },
+                {
+                  "type": "text",
+                  "id": "HCeb7",
+                  "name": "Texto",
+                  "fill": "$ink",
+                  "content": "¡Toca al ratón cuando aparezca!",
+                  "fontFamily": "$font-round",
+                  "fontSize": 19,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "plj7h",
+              "name": "Tablero Topos",
+              "width": "fill_container",
+              "fill": "#FFFFFF80",
+              "cornerRadius": 40,
+              "layout": "vertical",
+              "gap": 14,
+              "padding": 18,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "CZ5hY",
+                  "name": "Fila 1",
+                  "width": "fill_container",
+                  "gap": 14,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "Xe1Jd",
+                      "name": "Agujero 1",
+                      "width": "fill_container",
+                      "height": 150,
+                      "fill": "#FFD6D6",
+                      "cornerRadius": 24,
+                      "layout": "vertical",
+                      "gap": 2,
+                      "padding": [
+                        0,
+                        0,
+                        14,
+                        0
+                      ],
+                      "justifyContent": "end",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "ellipse",
+                          "id": "ANWok",
+                          "name": "Hueco",
+                          "fill": "#5A2323",
+                          "width": 104,
+                          "height": 40
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "lYGSP",
+                      "name": "Agujero 2",
+                      "width": "fill_container",
+                      "height": 150,
+                      "fill": "#DFF0C2",
+                      "cornerRadius": 24,
+                      "layout": "vertical",
+                      "gap": 2,
+                      "padding": [
+                        0,
+                        0,
+                        14,
+                        0
+                      ],
+                      "justifyContent": "end",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "ellipse",
+                          "id": "C6iuv",
+                          "name": "Hueco",
+                          "fill": "#33511E",
+                          "width": 104,
+                          "height": 40
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "kmhji",
+                  "name": "Fila 2",
+                  "width": "fill_container",
+                  "gap": 14,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "PkiM2",
+                      "name": "Agujero 3",
+                      "width": "fill_container",
+                      "height": 150,
+                      "fill": "#CDE9FF",
+                      "cornerRadius": 24,
+                      "layout": "vertical",
+                      "gap": 2,
+                      "padding": [
+                        0,
+                        0,
+                        14,
+                        0
+                      ],
+                      "justifyContent": "end",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "ellipse",
+                          "id": "YTSdJ",
+                          "name": "Hueco",
+                          "fill": "#1B4258",
+                          "width": 104,
+                          "height": 40
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ZnjI4",
+                      "name": "Agujero 4",
+                      "width": "fill_container",
+                      "height": 150,
+                      "fill": "#DFF0C2",
+                      "cornerRadius": 24,
+                      "layout": "vertical",
+                      "gap": 2,
+                      "padding": [
+                        0,
+                        0,
+                        14,
+                        0
+                      ],
+                      "justifyContent": "end",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "B08jT",
+                          "name": "Raton",
+                          "fill": "$ink",
+                          "content": "🐭",
+                          "fontFamily": "Inter",
+                          "fontSize": 64,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "ellipse",
+                          "id": "mT6Bj",
+                          "name": "Hueco",
+                          "fill": "#33511E",
+                          "width": 104,
+                          "height": 40
+                        },
+                        {
+                          "type": "frame",
+                          "id": "E8uYk",
+                          "layoutPosition": "absolute",
+                          "x": 100,
+                          "y": 12,
+                          "name": "Badge +1",
+                          "fill": "$sun",
+                          "cornerRadius": "$r-pill",
+                          "stroke": "$white",
+                          "strokeWidth": 2,
+                          "effect": {
+                            "type": "shadow",
+                            "shadowType": "outer",
+                            "color": "#00000030",
+                            "offset": {
+                              "x": 0,
+                              "y": 2
+                            },
+                            "blur": 6
+                          },
+                          "padding": [
+                            4,
+                            10
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "pHnUp",
+                              "name": "Texto",
+                              "fill": "$ink",
+                              "content": "+1",
+                              "fontFamily": "$font-round",
+                              "fontSize": 16,
+                              "fontWeight": "700"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "zSIUz",
+                  "name": "Fila 3",
+                  "width": "fill_container",
+                  "gap": 14,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "MFDwO",
+                      "name": "Agujero 5",
+                      "width": "fill_container",
+                      "height": 150,
+                      "fill": "#CDE9FF",
+                      "cornerRadius": 24,
+                      "layout": "vertical",
+                      "gap": 2,
+                      "padding": [
+                        0,
+                        0,
+                        14,
+                        0
+                      ],
+                      "justifyContent": "end",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "ellipse",
+                          "id": "wy7jF",
+                          "name": "Hueco",
+                          "fill": "#1B4258",
+                          "width": 104,
+                          "height": 40
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "b7Qha",
+                      "name": "Agujero 6",
+                      "width": "fill_container",
+                      "height": 150,
+                      "fill": "#FFD6D6",
+                      "cornerRadius": 24,
+                      "layout": "vertical",
+                      "gap": 2,
+                      "padding": [
+                        0,
+                        0,
+                        14,
+                        0
+                      ],
+                      "justifyContent": "end",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "ellipse",
+                          "id": "pLuZa",
+                          "name": "Hueco",
+                          "fill": "#5A2323",
+                          "width": 104,
+                          "height": 40
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "DwpEK",
+              "name": "Ayuda",
+              "fill": "$ink-soft",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "El ratón sale de un agujero al azar: ¡tócalo rápido!",
+              "textAlign": "center",
+              "fontFamily": "$font-round",
+              "fontSize": 17,
+              "fontWeight": "500"
+            },
+            {
+              "type": "frame",
+              "id": "fEcis",
+              "name": "Contador Parejas",
+              "width": "fill_container",
+              "fill": "$white",
+              "cornerRadius": 34,
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#00000021",
+                "offset": {
+                  "x": 0,
+                  "y": 6
+                },
+                "blur": 14
+              },
+              "gap": 10,
+              "padding": [
+                16,
+                12
+              ],
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "e4xHm",
+                  "name": "Icono",
+                  "width": 24,
+                  "height": 24,
+                  "icon": "sparkles",
+                  "library": "lucide",
+                  "fill": "$sun"
+                },
+                {
+                  "type": "text",
+                  "id": "k4t5Wz",
+                  "name": "Texto",
+                  "fill": "$ink",
+                  "content": "Puntos: 12 de 20",
+                  "fontFamily": "$font-round",
+                  "fontSize": 18,
+                  "fontWeight": "700"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "variables": {

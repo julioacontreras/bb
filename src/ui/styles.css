@@ -322,6 +322,18 @@ button {
   background: var(--green);
 }
 
+/* Marcador en texto para los niveles que suman puntos (10). */
+.nivel__contador {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 16px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.7);
+  font-size: 17px;
+  font-weight: 700;
+}
+
 .consigna {
   display: flex;
   align-items: center;
@@ -508,6 +520,154 @@ button {
   }
 
   .memoria__carta--fallo {
+    animation: none;
+  }
+}
+
+/* -------------------------------------------------- nivel de topos (10) */
+
+.topos-host {
+  width: 100%;
+  margin: auto 0;
+}
+
+.topos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  max-width: 330px;
+  margin: 0 auto;
+}
+
+.topos__hoyo {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  aspect-ratio: 1.15;
+  padding: 0 0 16px;
+  border: none;
+  border-radius: 24px;
+  cursor: pointer;
+  overflow: hidden;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.topos__hoyo--rojo {
+  background: #ffd6d6;
+}
+
+.topos__hoyo--verde {
+  background: #dff0c2;
+}
+
+.topos__hoyo--azul {
+  background: #cde9ff;
+}
+
+.topos__hoyo--fallo {
+  animation: contar-tiembla 400ms ease;
+}
+
+.topos__hueco {
+  width: 68%;
+  height: 28px;
+  border-radius: 50%;
+}
+
+.topos__hoyo--rojo .topos__hueco {
+  background: #5a2323;
+}
+
+.topos__hoyo--verde .topos__hueco {
+  background: #33511e;
+}
+
+.topos__hoyo--azul .topos__hueco {
+  background: #1b4258;
+}
+
+.topos__raton {
+  position: absolute;
+  bottom: 26px;
+  font-size: 58px;
+  line-height: 1;
+  animation: topos-sale 180ms ease-out;
+}
+
+.topos__raton--golpe {
+  animation: topos-golpe 550ms ease-out forwards;
+}
+
+.topos__mas {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: var(--sun);
+  border: 2px solid var(--white);
+  color: var(--ink);
+  font-size: 16px;
+  font-weight: 700;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.19);
+  animation: topos-mas 550ms ease-out forwards;
+}
+
+.topos__marcador {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  max-width: 330px;
+  margin: 16px auto 0;
+  padding: 12px;
+  border-radius: 999px;
+  background: var(--white);
+  font-size: 18px;
+  font-weight: 700;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.13);
+}
+
+@keyframes topos-sale {
+  from {
+    transform: translateY(45%) scale(0.6);
+  }
+  to {
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes topos-golpe {
+  30% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: translateY(60%) scale(0.5);
+    opacity: 0;
+  }
+}
+
+@keyframes topos-mas {
+  from {
+    transform: translateY(6px);
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-6px);
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .topos__hoyo--fallo,
+  .topos__raton,
+  .topos__raton--golpe,
+  .topos__mas {
     animation: none;
   }
 }

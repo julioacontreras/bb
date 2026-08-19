@@ -3,6 +3,8 @@ import { PhaserBoard } from '../../game/PhaserBoard'
 import { ContarBoard } from '../../game/ContarBoard'
 import { PuzzleBoard } from '../../game/PuzzleBoard'
 import { MemoriaBoard } from '../../game/MemoriaBoard'
+import { ToposBoard } from '../../game/ToposBoard'
+import { TOPOS_META } from '../../levels/topos'
 import { on } from '../../game/bus'
 import { say } from '../../game/audio'
 import { log } from '../../data/events'
@@ -59,11 +61,20 @@ export function Nivel({ level, nav }: { level: LevelDef; nav: Nav }) {
     >
       <div className="nivel__barra">
         <BotonRedondo icon="←" label="Volver al mapa" onClick={() => nav({ name: 'mapa' })} />
-        <div className="nivel__puntos" aria-label={`${placed} de ${level.pieces.length}`}>
-          {level.pieces.map((p, i) => (
-            <span key={p.id} className={`punto${i < placed ? ' punto--on' : ''}`} />
-          ))}
-        </div>
+        {level.mode === 'topos' ? (
+          // 20 puntos no caben como puntitos: se enseña el marcador en texto.
+          <div className="nivel__puntos" aria-label={`${placed} de ${TOPOS_META}`}>
+            <span className="nivel__contador">
+              <span aria-hidden>🐭</span> {placed} de {TOPOS_META}
+            </span>
+          </div>
+        ) : (
+          <div className="nivel__puntos" aria-label={`${placed} de ${level.pieces.length}`}>
+            {level.pieces.map((p, i) => (
+              <span key={p.id} className={`punto${i < placed ? ' punto--on' : ''}`} />
+            ))}
+          </div>
+        )}
         <BotonRedondo icon="🔊" label="Repetir la consigna" onClick={() => say(level.prompt)} />
       </div>
 
@@ -85,6 +96,11 @@ export function Nivel({ level, nav }: { level: LevelDef; nav: Nav }) {
       ) : level.mode === 'memoria' ? (
         <>
           <MemoriaBoard level={level} />
+          <p className="nivel__ayuda">{level.help}</p>
+        </>
+      ) : level.mode === 'topos' ? (
+        <>
+          <ToposBoard level={level} />
           <p className="nivel__ayuda">{level.help}</p>
         </>
       ) : (
