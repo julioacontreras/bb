@@ -47,6 +47,7 @@ export type LevelMode =
   | 'puzzle'
   | 'memoria'
   | 'topos'
+  | 'piano'
 
 export interface LevelDef {
   id: string

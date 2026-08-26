@@ -6,6 +6,7 @@ import { fruitByCount, levelFruitCount } from './fruitCount'
 import { nivelPuzzle, trozoNombre } from './puzzle'
 import { MEM_PAIRS, nivelMemoria } from './memoria'
 import { nivelTopos } from './topos'
+import { nivelPiano, PIANO_NOTAS } from './piano'
 import type { Hole, LevelDef, Piece } from './types'
 
 /** Color canónico de cada forma (§ 2 del plan). */
@@ -201,6 +202,7 @@ export const LEVELS: LevelDef[] = [
   levelFruitCount,
   nivelMemoria,
   nivelTopos,
+  nivelPiano,
 ]
 
 /** Cómo se nombra cada métrica en los reportes del adulto. */
@@ -223,6 +225,7 @@ export const metricLabel: Record<string, string> = {
   ),
   ...Object.fromEntries(MEM_PAIRS.map((p) => [`memoria-${p.key}`, `pareja: ${p.nombre}`])),
   'topo-raton': 'ratón atrapado',
+  ...Object.fromEntries(PIANO_NOTAS.map((n) => [`piano-${n.key}`, `nota ${n.nombre}`])),
 }
 
 /** Emoji para las métricas que no son formas geométricas. */
@@ -240,6 +243,7 @@ export const metricEmoji: Record<string, string> = {
   ),
   ...Object.fromEntries(MEM_PAIRS.map((p) => [`memoria-${p.key}`, p.emoji])),
   'topo-raton': '🐭',
+  ...Object.fromEntries(PIANO_NOTAS.map((n) => [`piano-${n.key}`, '🎵'])),
 }
 
 export const levelById = (id: string): LevelDef | undefined =>

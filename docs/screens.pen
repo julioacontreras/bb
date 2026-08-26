@@ -14968,6 +14968,759 @@
           ]
         }
       ]
+    },
+    {
+      "type": "frame",
+      "id": "ndZpN",
+      "x": 9102,
+      "y": 176,
+      "name": "19 Nivel 11 - Piano",
+      "clip": true,
+      "width": 390,
+      "fill": {
+        "type": "gradient",
+        "gradientType": "linear",
+        "enabled": true,
+        "rotation": 180,
+        "size": {
+          "height": 1
+        },
+        "colors": [
+          {
+            "color": "#E3E9FF",
+            "position": 0
+          },
+          {
+            "color": "#FFE9F3",
+            "position": 0.55
+          },
+          {
+            "color": "#FFF7E8",
+            "position": 1
+          }
+        ]
+      },
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "J3FQNr",
+          "name": "Status Bar",
+          "width": "fill_container",
+          "height": 62,
+          "padding": [
+            0,
+            26
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "nHG7U",
+              "name": "Hora",
+              "fill": "$ink",
+              "content": "9:41",
+              "fontFamily": "Inter",
+              "fontSize": 15,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "HXYxh",
+              "name": "Iconos",
+              "gap": 6,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "ILtCU",
+                  "name": "signal",
+                  "width": 17,
+                  "height": 17,
+                  "icon": "signal",
+                  "library": "lucide",
+                  "fill": "$ink"
+                },
+                {
+                  "type": "icon",
+                  "id": "v0W3k",
+                  "name": "wifi",
+                  "width": 17,
+                  "height": 17,
+                  "icon": "wifi",
+                  "library": "lucide",
+                  "fill": "$ink"
+                },
+                {
+                  "type": "icon",
+                  "id": "TzQAY",
+                  "name": "battery-full",
+                  "width": 17,
+                  "height": 17,
+                  "icon": "battery-full",
+                  "library": "lucide",
+                  "fill": "$ink"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "T2bg9",
+          "name": "Contenido",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 18,
+          "padding": [
+            6,
+            20,
+            34,
+            20
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "dUPeF",
+              "name": "Barra Superior",
+              "width": "fill_container",
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "yeR5m",
+                  "name": "Volver",
+                  "width": 54,
+                  "height": 54,
+                  "fill": "$white",
+                  "cornerRadius": "$r-pill",
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000024",
+                    "offset": {
+                      "x": 0,
+                      "y": 4
+                    },
+                    "blur": 10
+                  },
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "byvNT",
+                      "name": "Icono",
+                      "width": 28,
+                      "height": 28,
+                      "icon": "arrow-left",
+                      "library": "lucide",
+                      "fill": "$ink-soft"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "vP9h9",
+                  "name": "Progreso",
+                  "width": "fill_container",
+                  "height": 54,
+                  "fill": "#FFFFFFB3",
+                  "cornerRadius": "$r-pill",
+                  "gap": 8,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "ellipse",
+                      "id": "UjyAl",
+                      "name": "Punto 1",
+                      "fill": "$green",
+                      "width": 14,
+                      "height": 14
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "d91o7V",
+                      "name": "Punto 2",
+                      "fill": "$sun",
+                      "width": 18,
+                      "height": 18
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "O9Oo1Z",
+                      "name": "Punto 3",
+                      "fill": "#DCD3C6",
+                      "width": 14,
+                      "height": 14
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "Nr07Q",
+                      "name": "Punto 4",
+                      "fill": "#DCD3C6",
+                      "width": 14,
+                      "height": 14
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "I3Zhy",
+                      "name": "Punto 5",
+                      "fill": "#DCD3C6",
+                      "width": 14,
+                      "height": 14
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "jYXAU",
+                  "name": "Sonido",
+                  "width": 54,
+                  "height": 54,
+                  "fill": "$white",
+                  "cornerRadius": "$r-pill",
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000024",
+                    "offset": {
+                      "x": 0,
+                      "y": 4
+                    },
+                    "blur": 10
+                  },
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "LBkrQ",
+                      "name": "Icono",
+                      "width": 28,
+                      "height": 28,
+                      "icon": "volume-2",
+                      "library": "lucide",
+                      "fill": "$ink-soft"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "yOojO",
+              "name": "Instruccion",
+              "width": "fill_container",
+              "fill": "$white",
+              "cornerRadius": "$r-pill",
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#0000001A",
+                "offset": {
+                  "x": 0,
+                  "y": 4
+                },
+                "blur": 10
+              },
+              "gap": 10,
+              "padding": [
+                13,
+                18
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "tgeyt",
+                  "name": "Altavoz",
+                  "width": 26,
+                  "height": 26,
+                  "icon": "volume-2",
+                  "library": "lucide",
+                  "fill": "#B39DDB"
+                },
+                {
+                  "type": "text",
+                  "id": "MgH7U",
+                  "name": "Texto",
+                  "fill": "$ink",
+                  "content": "¡Toca las teclas del piano!",
+                  "fontFamily": "$font-round",
+                  "fontSize": 19,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "vxLXw",
+              "name": "Tablero Piano",
+              "width": "fill_container",
+              "fill": "#FFFFFF80",
+              "cornerRadius": 32,
+              "gap": 8,
+              "padding": 14,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "R1TIY",
+                  "name": "Tecla Do",
+                  "width": "fill_container",
+                  "height": 290,
+                  "fill": "#FF8A80",
+                  "cornerRadius": 18,
+                  "stroke": "#FFFFFF",
+                  "strokeWidth": 3,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000021",
+                    "offset": {
+                      "x": 0,
+                      "y": 4
+                    },
+                    "blur": 8
+                  },
+                  "layout": "vertical",
+                  "padding": [
+                    14,
+                    0,
+                    12,
+                    0
+                  ],
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "jKHAD",
+                      "name": "Nota Icono",
+                      "width": 20,
+                      "height": 20,
+                      "icon": "music",
+                      "library": "lucide",
+                      "fill": "#FFFFFFD9"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "G3ytsF",
+                      "name": "Etiqueta Do",
+                      "width": 40,
+                      "height": 40,
+                      "fill": "$white",
+                      "cornerRadius": "$r-pill",
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "F79gau",
+                          "name": "Nota",
+                          "fill": "$ink",
+                          "content": "Do",
+                          "fontFamily": "$font-round",
+                          "fontSize": 14,
+                          "fontWeight": "800"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "oaxoi",
+                  "name": "Tecla Re",
+                  "width": "fill_container",
+                  "height": 290,
+                  "fill": "#FFB74D",
+                  "cornerRadius": 18,
+                  "stroke": "#FFFFFF",
+                  "strokeWidth": 3,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000021",
+                    "offset": {
+                      "x": 0,
+                      "y": 4
+                    },
+                    "blur": 8
+                  },
+                  "layout": "vertical",
+                  "padding": [
+                    14,
+                    0,
+                    12,
+                    0
+                  ],
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "S6RkC",
+                      "name": "Nota Icono",
+                      "width": 20,
+                      "height": 20,
+                      "icon": "music",
+                      "library": "lucide",
+                      "fill": "#FFFFFFD9"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Xz2OI",
+                      "name": "Etiqueta Re",
+                      "width": 40,
+                      "height": 40,
+                      "fill": "$white",
+                      "cornerRadius": "$r-pill",
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "HfFda",
+                          "name": "Nota",
+                          "fill": "$ink",
+                          "content": "Re",
+                          "fontFamily": "$font-round",
+                          "fontSize": 14,
+                          "fontWeight": "800"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "BT7tc",
+                  "name": "Tecla Mi",
+                  "width": "fill_container",
+                  "height": 290,
+                  "fill": "#FFD54F",
+                  "cornerRadius": 18,
+                  "stroke": "#FFFFFF",
+                  "strokeWidth": 3,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000021",
+                    "offset": {
+                      "x": 0,
+                      "y": 4
+                    },
+                    "blur": 8
+                  },
+                  "layout": "vertical",
+                  "padding": [
+                    14,
+                    0,
+                    12,
+                    0
+                  ],
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "U7OS1h",
+                      "name": "Nota Icono",
+                      "width": 20,
+                      "height": 20,
+                      "icon": "music",
+                      "library": "lucide",
+                      "fill": "#FFFFFFD9"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ly9me",
+                      "name": "Etiqueta Mi",
+                      "width": 40,
+                      "height": 40,
+                      "fill": "$white",
+                      "cornerRadius": "$r-pill",
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "qQJQN",
+                          "name": "Nota",
+                          "fill": "$ink",
+                          "content": "Mi",
+                          "fontFamily": "$font-round",
+                          "fontSize": 14,
+                          "fontWeight": "800"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "w8TBmo",
+                  "name": "Tecla Fa",
+                  "width": "fill_container",
+                  "height": 290,
+                  "fill": "#AED581",
+                  "cornerRadius": 18,
+                  "stroke": "#FFFFFF",
+                  "strokeWidth": 3,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000021",
+                    "offset": {
+                      "x": 0,
+                      "y": 4
+                    },
+                    "blur": 8
+                  },
+                  "layout": "vertical",
+                  "padding": [
+                    14,
+                    0,
+                    12,
+                    0
+                  ],
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "UY4dq",
+                      "name": "Nota Icono",
+                      "width": 20,
+                      "height": 20,
+                      "icon": "music",
+                      "library": "lucide",
+                      "fill": "#FFFFFFD9"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "QjJ8b",
+                      "name": "Etiqueta Fa",
+                      "width": 40,
+                      "height": 40,
+                      "fill": "$white",
+                      "cornerRadius": "$r-pill",
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "EsmNP",
+                          "name": "Nota",
+                          "fill": "$ink",
+                          "content": "Fa",
+                          "fontFamily": "$font-round",
+                          "fontSize": 14,
+                          "fontWeight": "800"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "SJOys",
+                  "name": "Tecla Sol",
+                  "width": "fill_container",
+                  "height": 290,
+                  "fill": "#64B5F6",
+                  "cornerRadius": 18,
+                  "stroke": "#FFFFFF",
+                  "strokeWidth": 3,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000021",
+                    "offset": {
+                      "x": 0,
+                      "y": 4
+                    },
+                    "blur": 8
+                  },
+                  "layout": "vertical",
+                  "padding": [
+                    14,
+                    0,
+                    12,
+                    0
+                  ],
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "bUzu0",
+                      "name": "Nota Icono",
+                      "width": 20,
+                      "height": 20,
+                      "icon": "music",
+                      "library": "lucide",
+                      "fill": "#FFFFFFD9"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "CA3DJ",
+                      "name": "Etiqueta Sol",
+                      "width": 40,
+                      "height": 40,
+                      "fill": "$white",
+                      "cornerRadius": "$r-pill",
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "z1K4Ng",
+                          "name": "Nota",
+                          "fill": "$ink",
+                          "content": "Sol",
+                          "fontFamily": "$font-round",
+                          "fontSize": 14,
+                          "fontWeight": "800"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "xctez",
+                  "name": "Tecla La",
+                  "width": "fill_container",
+                  "height": 290,
+                  "fill": "#B39DDB",
+                  "cornerRadius": 18,
+                  "stroke": "#FFFFFF",
+                  "strokeWidth": 3,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000021",
+                    "offset": {
+                      "x": 0,
+                      "y": 4
+                    },
+                    "blur": 8
+                  },
+                  "layout": "vertical",
+                  "padding": [
+                    14,
+                    0,
+                    12,
+                    0
+                  ],
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "JUdmc",
+                      "name": "Nota Icono",
+                      "width": 20,
+                      "height": 20,
+                      "icon": "music",
+                      "library": "lucide",
+                      "fill": "#FFFFFFD9"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "awRgl",
+                      "name": "Etiqueta La",
+                      "width": 40,
+                      "height": 40,
+                      "fill": "$white",
+                      "cornerRadius": "$r-pill",
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "m63KTT",
+                          "name": "Nota",
+                          "fill": "$ink",
+                          "content": "La",
+                          "fontFamily": "$font-round",
+                          "fontSize": 14,
+                          "fontWeight": "800"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "N0ZlK",
+              "name": "Ayuda",
+              "fill": "$ink-soft",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Cada tecla suena con una nota distinta",
+              "textAlign": "center",
+              "fontFamily": "$font-round",
+              "fontSize": 17,
+              "fontWeight": "500"
+            },
+            {
+              "type": "frame",
+              "id": "VhNb0",
+              "name": "Contador Parejas",
+              "width": "fill_container",
+              "fill": "$white",
+              "cornerRadius": 34,
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#00000021",
+                "offset": {
+                  "x": 0,
+                  "y": 6
+                },
+                "blur": 14
+              },
+              "gap": 10,
+              "padding": [
+                16,
+                12
+              ],
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "M82pw",
+                  "name": "Icono",
+                  "width": 24,
+                  "height": 24,
+                  "icon": "sparkles",
+                  "library": "lucide",
+                  "fill": "$sun"
+                },
+                {
+                  "type": "text",
+                  "id": "Mm840",
+                  "name": "Texto",
+                  "fill": "$ink",
+                  "content": "Notas: 3 de 6",
+                  "fontFamily": "$font-round",
+                  "fontSize": 18,
+                  "fontWeight": "700"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "variables": {

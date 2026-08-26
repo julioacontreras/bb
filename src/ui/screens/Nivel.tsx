@@ -4,6 +4,7 @@ import { ContarBoard } from '../../game/ContarBoard'
 import { PuzzleBoard } from '../../game/PuzzleBoard'
 import { MemoriaBoard } from '../../game/MemoriaBoard'
 import { ToposBoard } from '../../game/ToposBoard'
+import { PianoBoard } from '../../game/PianoBoard'
 import { TOPOS_META } from '../../levels/topos'
 import { on } from '../../game/bus'
 import { say } from '../../game/audio'
@@ -101,6 +102,11 @@ export function Nivel({ level, nav }: { level: LevelDef; nav: Nav }) {
       ) : level.mode === 'topos' ? (
         <>
           <ToposBoard level={level} />
+          <p className="nivel__ayuda">{level.help}</p>
+        </>
+      ) : level.mode === 'piano' ? (
+        <>
+          <PianoBoard level={level} />
           <p className="nivel__ayuda">{level.help}</p>
         </>
       ) : (

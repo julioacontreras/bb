@@ -91,6 +91,15 @@ export function sfxTap(): void {
   blip(520, 0, 0.1, 0.12, 'triangle')
 }
 
+/**
+ * Nota del piano (nivel 11): tono con un armónico suave. No se apaga con el
+ * ajuste de `efectos` porque el sonido es el contenido del propio nivel.
+ */
+export function sfxNota(freq: number): void {
+  blip(freq, 0, 0.7, 0.24, 'triangle')
+  blip(freq * 2, 0, 0.35, 0.07, 'sine')
+}
+
 /** Aplauso de fin de nivel. */
 export function sfxApplause(): void {
   if (!getProgress().settings.aplausos) return

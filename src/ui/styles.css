@@ -672,6 +672,96 @@ button {
   }
 }
 
+/* -------------------------------------------------- nivel de piano (11) */
+
+.piano-host {
+  width: 100%;
+  margin: auto 0;
+}
+
+.piano {
+  display: flex;
+  gap: 8px;
+  max-width: 350px;
+  margin: 0 auto;
+  padding: 14px;
+  border-radius: 32px;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.piano__tecla {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 280px;
+  padding: 14px 0 12px;
+  border: 3px solid var(--white);
+  border-radius: 18px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.13);
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 120ms ease;
+}
+
+.piano__tecla--activa {
+  transform: scale(0.94) translateY(3px);
+  filter: brightness(1.1);
+}
+
+.piano__icono {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 20px;
+  line-height: 1;
+}
+
+.piano__etiqueta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--white);
+  color: var(--ink);
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.piano__etiqueta--on {
+  background: var(--sun);
+}
+
+.piano__marcador {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  max-width: 330px;
+  margin: 16px auto 0;
+  padding: 12px;
+  border-radius: 999px;
+  background: var(--white);
+  font-size: 18px;
+  font-weight: 700;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.13);
+}
+
+.piano__marcador--boton {
+  width: 100%;
+  border: 3px solid var(--white);
+  background: var(--sun);
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .piano__tecla {
+    transition: none;
+  }
+}
+
 /* ------------------------------------------------- nivel de puzzle (07) */
 
 .puzzle-host {
