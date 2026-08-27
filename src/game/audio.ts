@@ -34,6 +34,12 @@ type Wave = OscillatorType
 function blip(freq: number, at: number, dur: number, gain = 0.22, type: Wave = 'sine') {
   const c = ac()
   if (!c || !master) return
+  if (c.state === 'suspended') {
+    // En móvil el contexto arranca suspendido y resume() es asíncrono:
+    // programamos el sonido cuando termine para no perder el primer toque.
+    void c.resume().then(() => blip(freq, at, dur, gain, type))
+    return
+  }
   const osc = c.createOscillator()
   const g = c.createGain()
   osc.type = type

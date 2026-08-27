@@ -42,7 +42,7 @@ export function PianoBoard({ level }: { level: LevelDef }) {
       return
     }
 
-    say(pieza.say)
+    // Aquí no se anuncia la nota con voz: el tono es el protagonista del nivel.
     const ahora = new Set(tocadas)
     ahora.add(nota.key)
     setTocadas(ahora)
